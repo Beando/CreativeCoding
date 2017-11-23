@@ -18,6 +18,7 @@ function draw() {
   //Set a background color
   background(255);
   fill(215,200,170);
+  //For Loop
   for(let x=0;x<10;x++){
     rect(size*x,height/2,size,size)
   }
