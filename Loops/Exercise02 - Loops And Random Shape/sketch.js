@@ -17,12 +17,19 @@ function draw() {
     for (let x = 0; x < 10; x++) {
       //Draw the background shapes
       fill(215, 200, 170);
-      rect(size * x, size * y, size, size);
+      if (x%2) {
+        ellipseMode(CORNER)
+        ellipse(12.5+size * x, 12.5+size * y, size/2, size/2);
+
+      }
+      else {
+        rect(12.5+size * x, 12.5+size * y, size/2, size/2);
+      }
 
       //Draw the foreground shapes with a random RGB color
-      fill(random(255), random(255), random(255));
+      //ellipseMode(CORNER)
       //Create a slight offeset for the x and y, to appear in the middle
-      rect(12.5+size * x, 12.5+size * y, size/2, size/2);
+      //ellipse(12.5+size * x, 12.5+size * y, size/2, size/2);
     }
   }
 }
