@@ -18,12 +18,14 @@ function draw() {
       //Draw the background shapes
       fill(215, 200, 170);
       if (x%2) {
-        ellipseMode(CORNER)
-        ellipse(12.5+size * x, 12.5+size * y, size/2, size/2);
-
+        ellipse(size * x, size * y, size, size);
+        rect(12.5+size * x, 12.5+size * y, size/2, size/2);
       }
       else {
-        rect(12.5+size * x, 12.5+size * y, size/2, size/2);
+
+        rect(size * x, size * y, size, size)
+        ellipseMode(CORNER)
+        ellipse(12.5+size * x, 12.5+size * y, size/2, size/2);
       }
 
       //Draw the foreground shapes with a random RGB color
