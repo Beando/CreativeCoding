@@ -22,4 +22,5 @@ function draw() {
       rect(tileSize * x, tileSize * y, tileSize, tileSize);
 }
 }
+
 }
