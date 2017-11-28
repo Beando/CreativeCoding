@@ -24,8 +24,8 @@ function draw() {
   var color3 = color(36,194,203,mouse2)
   var color4 = color(239,108,46,mouse3)
 
-  for (let y = 0; y < height;y += tileSize) {
-    for (let x = 0; x < width;x += tileSize) {
+  for (let y = 0; y < height; y += tileSize) {
+    for (let x = 0; x < width; x += tileSize) {
       //Draw the background shapes
       //fill(215, 200, 170);
 
