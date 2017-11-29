@@ -54,8 +54,9 @@ function draw() {
   }
   fill(r,g,b)
   ellipse(x,y,50,50)
+  
   noFill()
   fill(255)
-  text(x,width/2,height/2-20)
-  text(y,width/2,height/2+20)
+  //text(x,width/2,height/2-20)
+  //text(y,width/2,height/2+20)
 }
