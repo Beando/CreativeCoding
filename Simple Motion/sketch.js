@@ -20,17 +20,17 @@ function setup() {
 
 function draw() {
   background(100)
-
+  
   x+=speedX;
   y+=speedY;
-  if (x>width) {
+  if (x+25>width) {
     //x=0
     r = random(255)
     g = random(255)
     b = random(255)
     speedX=speedX*-1
     }
-  if (x<0){
+  if (x-25<0){
     //x=width
     r = random(255)
     g = random(255)
@@ -38,14 +38,14 @@ function draw() {
     speedX=abs(speedX)
 
   }
-  if (y>height){
+  if (y+25>height){
     //y=0
     r = random(255)
     g = random(255)
     b = random(255)
     speedY=speedY*-1
   }
-  if (y<0){
+  if (y-25<0){
     //y=height
     r = random(255)
     g = random(255)
@@ -54,7 +54,7 @@ function draw() {
   }
   fill(r,g,b)
   ellipse(x,y,50,50)
-  
+
   noFill()
   fill(255)
   //text(x,width/2,height/2-20)
