@@ -11,7 +11,9 @@ let g;
 let b;
 
 function setup() {
-  createCanvas(500, 500);
+  var canvas = createCanvas(500, 500);
+  //canvas.position(25,0);
+  canvas.parent("myContainer")
   x=width/2
   y=height/2
   speedX=random(-5,5)
@@ -20,7 +22,7 @@ function setup() {
 
 function draw() {
   background(100)
-  
+
   x+=speedX;
   y+=speedY;
   if (x+25>width) {
