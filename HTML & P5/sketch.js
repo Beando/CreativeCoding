@@ -48,16 +48,18 @@ class Lines{
       stroke(255,random(255))
       this.y1 *= -1;
     }
-    if (this.y1 > (height) || this.y1<0){
-
+    if (this.y1 > height || this.y1<0){
+      stroke(255,random(255))
       this.x1 *= -1;
     }
 
     //Based on boundaries collision, reverse direction for x and y
     if (this.x > width || this.x<0){
+      stroke(255,random(255))
       this.speedX *= -1;
     }
-    if (this.y > (height) || this.y<0){
+    if (this.y > height || this.y<0){
+      stroke(255,random(255))
       this.speedY *= -1;
     }
   }
