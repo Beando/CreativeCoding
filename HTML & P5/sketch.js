@@ -1,64 +1,72 @@
-//https://github.com/stavrosdidakis/DAT-GAD-405_2017
-//https://p5js.org
 
-//DAT405 / GAD405
-let x;
-let y;
-let speedX;
-let speedY;
-let r;
-let g;
-let b;
+let lineArr = [];
+let arraySize = 50;
 
 function setup() {
-  var canvas = createCanvas(500, 500);
+  var canvas = createCanvas(594, 841);
   //canvas.position(25,0);
   canvas.parent("myContainer")
-  x=width/2
-  y=height/2
-  speedX=random(-5,5)
-  speedY=random(-5,5)
+  for (let i=0; i<arraySize; i++){
+    lineArr[i] = new Lines(width/2, height/2, random(-5, 5), random(-5, 5), random(5,15));
+  }
 }
 
 function draw() {
-  background(100)
+  background(160);
+  strokeWeight(random(15));
+  for (let i=0; i<lineArr.length; i++){
+    lineArr[i].moveFunction();
+    lineArr[i].displayLine();
+  }
+}
 
-  x+=speedX;
-  y+=speedY;
-  if (x+25>width) {
-    //x=0
-    r = random(255)
-    g = random(255)
-    b = random(255)
-    speedX=speedX*-1
+//Definition of the class Circle
+class Lines{
+
+  constructor(x, y, speedX, speedY, size){
+    //Setup of class' variables
+    this.x = x;
+    this.y = y;
+    this.speedX = speedX;
+    this.speedY = speedY;
+    this.size = size;
+
+    this.rd = random(255);
+    this.grn = random(255);
+    this.bl = random(255);
+    this.a = random(10,255);
+  }
+  //Class function that takes care of motion and collision
+  moveFunction(){
+    //Motion system - current position and speed
+    this.x = this.x + this.speedX;
+    this.y = this.y + this.speedY;
+    this.x1= abs(this.x)
+    this.y1= abs(this.y)
+
+    if (this.x1 > width || this.x1<0){
+      stroke(255,random(255))
+      this.y1 *= -1;
     }
-  if (x-25<0){
-    //x=width
-    r = random(255)
-    g = random(255)
-    b = random(255)
-    speedX=abs(speedX)
+    if (this.y1 > (height) || this.y1<0){
 
-  }
-  if (y+25>height){
-    //y=0
-    r = random(255)
-    g = random(255)
-    b = random(255)
-    speedY=speedY*-1
-  }
-  if (y-25<0){
-    //y=height
-    r = random(255)
-    g = random(255)
-    b = random(255)
-    speedY=abs(speedY)
-  }
-  fill(r,g,b)
-  ellipse(x,y,50,50)
+      this.x1 *= -1;
+    }
 
-  noFill()
-  fill(255)
-  //text(x,width/2,height/2-20)
-  //text(y,width/2,height/2+20)
+    //Based on boundaries collision, reverse direction for x and y
+    if (this.x > width || this.x<0){
+      this.speedX *= -1;
+    }
+    if (this.y > (height) || this.y<0){
+      this.speedY *= -1;
+    }
+  }
+
+  //Class function that displays the ellipse
+  displayLine(){
+    //noFill();
+    //this.fillcol = color(this.rd, this.grn, this.bl, this.a)
+    //fill(this.fillcol);
+    line(this.x, this.y, this.y1 ,this.x1 );
+  }
 }
