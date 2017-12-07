@@ -12,7 +12,11 @@
 /* Individual elements */
 
 p{
-
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  padding:25px;
+  color: white;
 }
 
 h1{

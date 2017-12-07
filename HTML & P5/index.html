@@ -1,19 +1,37 @@
 <!DOCTYPE html>
+<!--Opening of the html tags-->
 <html lang="en">
+<!--Head - includes meta data, script information and links to css file-->
 <head>
+  <!--Meta data-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Link to the css (Cascading style sheet) that holds the style elements-->
   <link type= "text/css" rel="stylesheet" href="style.css"/>
+  <!--Links to scripts, this includes the p5 libraries-->
   <script src="libraries/p5.js" type="text/javascript"></script>
   <script src="libraries/p5.dom.js" type="text/javascript"></script>
   <script src="libraries/p5.sound.js" type="text/javascript"></script>
   <script src="sketch.js" type="text/javascript"></script>
+  <!--Title of the page-->
   <title>HTML & p5</title>
 </head>
+<!--Body-->
 <body>
-  <header><h1>GAD-405 Creative Coding</h1></header>
+  <!--Header containing the H1 tag with the title of the project-->
+  <header>
+    <h1>GAD-405 Creative Coding</h1>
+  </header>
+  <!--Div class containing the javascript element-->
   <div class="content" id="myContainer"></div>
-  <footer></footer>
+  <!--Footer containg the paragraphs with text explaining how to use the project-->
+  <footer>
+    <!--Paragraph that contains the instructions, <br> is used to break the sentence up-->
+    <p>Instructions:<br>
+      Mouse click - change background colour<br>
+
+    </p>
+  </footer>
 </body>
 </html>

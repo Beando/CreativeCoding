@@ -20,7 +20,7 @@ function setup() {
 
 function draw() {
   background(100)
-  
+
   x+=speedX;
   y+=speedY;
   if (x+25>width) {
@@ -36,7 +36,6 @@ function draw() {
     g = random(255)
     b = random(255)
     speedX=abs(speedX)
-
   }
   if (y+25>height){
     //y=0
