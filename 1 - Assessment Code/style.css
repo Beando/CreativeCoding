@@ -1,0 +1,58 @@
+/* Classes */
+.content {
+    width: 594px;
+    margin: auto;
+    padding:25px;
+    align-self: center;
+}
+
+/* IDs */
+#mark1{
+  color: red;
+}
+#mark2{
+  color: blue;
+}
+#mark3{
+  color: green;
+}
+#mark4{
+  color: black;
+}
+/* Individual elements */
+mark{
+  background-color: #535456;
+}
+p{
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  padding:25px;
+  color: white;
+}
+
+h1{
+  max-width: 50%;
+  margin: auto;
+  padding:25px;
+  color: white;
+}
+
+header{
+  background-color: #535456;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+footer{
+  background-color: #535456;
+  width:100%;
+
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
