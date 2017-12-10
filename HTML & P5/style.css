@@ -8,9 +8,23 @@
 }
 
 /* IDs */
+#mark1{
+  color: red;
+}
+#mark2{
+  color: blue;
+}
+#mark3{
+  color: green;
+}
+#mark4{
+  color: black;
+}
 
 /* Individual elements */
-
+mark{
+  background-color: #535456;
+}
 p{
   text-align: center;
   max-width: 50%;
@@ -36,7 +50,7 @@ header{
 footer{
   background-color: #535456;
   width:100%;
-  height:100px;
+
 }
 
 body{
