@@ -4,28 +4,30 @@ GAD405 Creative Coding
 GitHub Pages link to final assessment page: https://beando.github.io./
 
 Instructions on using the Program:
-Mouse Click - Changes the background 
+
+Mouse Click - Changes the background
+
 Num 1 - changes red value of certain shapes
+
 Num 2 - changes green value of certain shapes
+
 Num 3 - changes blue value of certain shapes
+
 Q - changes size of certain shapes
 
 Documentation:
 
-Within this project we were tasked to make a Generative art piece (ìGenerative art refers to art that in whole or in part has been created with the use of an autonomous system.î - https://en.wikipedia.org/wiki/Generative_art ) that either displayed new static content each time its run or changes according to user interactions such as mouse movements. We were tasked with using no less than two of these elements:
- 
+Within this project we were tasked to make a Generative art piece (‚ÄúGenerative art refers to art that in whole or in part has been created with the use of an autonomous system.‚Äù - https://en.wikipedia.org/wiki/Generative_art ) that either displayed new static content each time its run or changes according to user interactions such as mouse movements.
+
 I started the project by looking at artists who primarily work with Generative art such as Aza Raskin, Pascal Dombis and Nervous System.
 
-Aza Raskin ñ Algorithm Ink:
-Algorithm Ink is an extension of a program called Context Free written by Aza Raskin. Algorithm Ink makes use of Open-web standard based tools so that the user can use the program without the need of plugins. Algorithm Ink is a program that creates patterns using code from the user such as:
-
- 
-Which creates:
- 
+Aza Raskin ‚Äì Algorithm Ink:
+Algorithm Ink is an extension of a program called Context Free written by Aza Raskin. Algorithm Ink makes use of Open-web standard based tools so that the user can use the program without the need of plugins. Algorithm Ink is a program that creates patterns using code from the user such as.
 This can be used to create virtually anything that the user can think of and code using the language found in the Context Free documentation.
 I used ideas from this program such as the variety of colours and stroke weight of the different shapes as I really enjoyed looking at the variety of thickness of the shapes.
-Pascal Dombis ñ Irrational Geometrics (2005 ñ 2015):
-Pascal uses the idea of ellipses and the stroke on the ellipses to create a seemingly infinite piece of work such as in Irrational Geometrics. His idea was that if you took a line segment and stretched it, it would make a curve, if you continued stretching you would make an ellipse and so forth until you had a line again. ìThis series thus works on the stretching of the line and pushes to the extreme this principle of false straight but true curves which by saturation give the illusion of being straight.î - http://dombis.com/works/irrational-geo/
+
+Pascal Dombis ‚Äì Irrational Geometrics (2005 ‚Äì 2015):
+Pascal uses the idea of ellipses and the stroke on the ellipses to create a seemingly infinite piece of work such as in Irrational Geometrics. His idea was that if you took a line segment and stretched it, it would make a curve, if you continued stretching you would make an ellipse and so forth until you had a line again. ‚ÄúThis series thus works on the stretching of the line and pushes to the extreme this principle of false straight but true curves which by saturation give the illusion of being straight.‚Äù - http://dombis.com/works/irrational-geo/
 I liked this work as it made use of lines to create an entangled mess that could be interpreted as many different things by different people.
 
 Development process: 
@@ -44,7 +46,7 @@ GitHub Pages:
 https://beando.github.io./ 
 
 GitHub Repository with all files: 
- https://github.com/Beando/CreativeCoding 
+https://github.com/Beando/CreativeCoding 
 
 References
 En.wikipedia.org. (2017). Generative art. [online] Available at: https://en.wikipedia.org/wiki/Generative_art  
